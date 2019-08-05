@@ -14,17 +14,71 @@
   
 
   <script>
-    ons.ready(function() {
-      console.log("Onsen UI is ready!");
-    });
-
-    if (ons.platform.isIPhoneX()) {
-      document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
-      document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
-    }
+   
   </script>
 </head>
-<body>
-  This is a template for Onsen UI app.
+<body style=" background-image:url('img/fundo.png');">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Cadastro de livro</h1>
+        </div>
+      </div>
+
+      <div class="jumbotron">
+        <div class="row linha ">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="">Titulo do Livro</label>
+              <input type="text" class="form-control" id="titulo">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="">Autor do Livro</label>
+              <input type="text" class="form-control" id="autor">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="">Ano do Lançamento</label>
+              <input type="number" class="form-control" id="ano" max="2019" min="1900">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-4">
+            <div class="form-group">
+              <button class="btn btn-primary btn-block" id="btnNovo">Novo</button>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="form-group">
+              <button class="btn btn-success btn-block" id="btnSalvar">Salvar</button>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="form-group">
+              <button class="btn btn-warning btn-block" id="btnCancelar">Cancelar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <button class="btn btn-info btn-block" id="listarLivro">Listar</button>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="components/jquery-3.3.1.min.js"></script>
+  <script src="components/acao.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+
+  <script>
+    $(document).ready(function(){
+      preencherLista();
+    });   
+  </script>
+</head>
+<body style=" background-image:url('img/fundo.png');">
+    <div class="container">
+      <div class="row linha">
+        <div class="col-xs-12">
+          <h3>Listagem do Livro</h3>
+        </div>
+      </div> 
+
+      <div class="row linha">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="">Lista dos livros registrados</label>
+            <select name="" class="form-control" id="listaLivro" name="listaLivro"></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row linha">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="">Código do Livro</label>
+            <input type="text" class="form-control" id="codigo" name="codigo" readonly>
+          </div>
+        </div>
+      </div>  
+
+      <div class="row linha">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="">Título do Livro</label>
+            <input name="" class="form-control" id="titulo" name="titulo" readonly></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row linha">
+        <div class="col-xs-12">
+          <label for="">Autor do Livro</label>
+          <input type="text" class="form-control" id="autor" name="autor" readonly>
+        </div>
+      </div>
+
+      <div class="row linha">
+        <div class="col-xs-12">
+          <label for="">Ano</label>
+          <input type="number" class="form-control" id="ano" name="ano" readonly>
+        </div>
+      </div>
+
+      <div class="row linha">
+        <div class="col-xs-3">
+          <button class="btn btn-block btn-success" id="btnSalvar">
+            <span class="glyphicon glyphicon-floppy-disk"></span>
+          </button>
+        </div>
+        <div class="col-xs-3">
+          <button class="btn btn-block btn-info" id="btnEditar">
+             <span class="glyphicon glyphicon-pencil"></span>
+          </button>
+        </div>
+         <div class="col-xs-3">
+          <button class="btn btn-block btn-danger" id="btnDeletar">
+            <span class="glyphicon glyphicon-trash"></span>
+          </button>
+        </div>
+        <div class="col-xs-3">
+          <button class="btn btn-block btn-warning" id="btnCancelar">
+            <span class="glyphicon glyphicon-remove-circle"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row linha"> 
+        <div class="col-xs-12">
+          <button class="btn btn-block btn-primary" id="btnVoltar">Voltar</button>
+        </div>
+      </div>
+
+    </div>  
+</body>
+</html>
